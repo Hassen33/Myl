@@ -1,0 +1,38 @@
+/* global style */
+*{
+    margin:0;
+    padding: 0;
+    font-family: var(--font-family);
+    /* border: 2px solid red; */
+}
+body{
+    background-color: #f5f5f5;
+}
+
+/* golobal colors */
+:root {
+    /* colors */
+    --main-bg-color:#0A233D;
+    --secondary-bg-color:#1B3A5A;
+    --title-color:#C6A15E;
+    --black-text-color:#000000;
+    --white-text-color:#ffffff;
+
+    /* fonts */
+    /* global font family */
+    --font-family-global: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    ---font-weight-global:bolder;
+    
+    /* medium titles */
+    --medium-title-size:36px;
+
+        /* small title style */
+        --small-title-size:36px;
+
+        /* text small */
+        --small-title-size:24px;
+
+
+        --small-title-color:#0A233D;
+        --small-title-color:#0A233D;
+    }
