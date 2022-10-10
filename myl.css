@@ -102,11 +102,11 @@ body{
             }
 
             /* list */
-            ul.list{
+            ul.list ,ul.list1{
                 padding-left: 4vw;
                 font-size: 1.3vw ;
             }
-            li {
+            ul.list > li , ul.list1 >li {
                 margin: 0;
                 padding: 36px 0 5px 3vw;
                 list-style: none;
@@ -115,41 +115,91 @@ body{
                 background-position: -1% 81%;
                 background-size: 2em;
             }
-            ul:first-child{
+            ul.list:first-child , ul.list:first-child{
                 padding: 40px;
+            }
+            
+            /* Second column */
+            .col2{
+                background-image: url("assets/icons/first section/second column/col2-background.svg");
+                background-size: cover;
+                background-position: center center;
+                height: 100vh;
+            }
+            .overlay{
+                background-color: #19293979;
+                width: 100%;
+                height: 100%;
+                padding: 70px 0 70px 0 ;
+            }
+            /* form */
+            .form-label-group{
+                padding-top: 0.5vh;
+                
+            }
+            label{
+                color: var(--white-text-color);
+                font-size: 0.9em;
+            }
+            .btn{
+                background-color: var(--title-color);
+                margin-top:10px ;
+                padding: 3% 10% 3% 10% ;
+                
+            }
+
+            /* third column  */
+            .col3{
+                display: none;
+                background-color: var(--main-bg-color);
+                color: var(--white-text-color);
+                height: 30vh;
+            }
+            /* list */
+            ul.list1{
+                font-size: 3.2vw ;
+                display: none;
+                
+            }
+            ul.list1 >li {
+                padding: 25px 0 5px 4.8vw;
+                background-size: 2.5em;
+                font-weight: 500;
             }
 
             
             /* media query for first section */
             /* Large desktops and laptops */
             @media (min-width: 1200px) {
-                
+                  /* media query for first section */
+                    /* media query for second section */ 
             }
             /* Landscape tablets and medium desktops */
             @media (min-width: 992px) and (max-width: 1199px) {
-                
+                  /* media query for first section */
+                    /* media query for second section */
             }
             
             /* Portrait tablets and small desktops */
             @media (min-width: 768px) and (max-width: 991px) {
-                
-                
-                
+                  /* media query for first section */
+                  /* media query for second section */
             }
             
             /* Landscape phones and portrait tablets */
             @media (max-width: 767px) {
-                
+                  /* media query for first section */
                 /* list */
                 ul.list{
                     padding-left: 4vw;
                     font-size: 1.6vw ;
                 }
+                  /* media query for second section */
             }
             
             /* Portrait phones and smaller */
             @media (max-width: 576px) {
-
+                  /* media query for first section */
                 .col1{
                     height: 33.5vh;
                     padding-top: 0;
@@ -193,22 +243,49 @@ body{
                 ul.list{
                     display: none;
                 }
+            /* col2 */
+            .overlay{
+                padding: 30px 0 30px 0 ;
+            }
+            /* col3 */
+            .col3{
+                display: block;
+            }
+                    /* ul list1 */
+                    ul.list1{
+                        display:block;
+                        font-size: 2.3vw;
+                    }
+                    ul.list1 >li {
+
+                    }
 
 }
             /* exta small   */
             @media (max-width: 460px) {
-
-    .slogan{
-        font-size:2vw;
-        margin-top: 11.5vh;
-        margin-left: -13vw;
-       
-        
-    }
-   
+                  /* media query for first section */
+                    .slogan{
+                            font-size:2vw;
+                            margin-top: 11.5vh;
+                            margin-left: -13vw;
+                        
+                            
+                        }
+                  /* col3 */
+                  /* list1 */
+                     ul.list1 {
+                        font-size: 2.5vw;
+                    }
+                    ul.list1 >li {
+                        padding: 25px 0vw 5px 5.8vw;
+                        background-size: 2.5em;
+                        font-weight: 500;
+                    }
+                    
             }
             /* x x small */
             @media (max-width: 300px) {
+                  /* media query for first section */
                 .slogan{
                     font-size:2.9vw;
                     margin-top: 9.5vh;
@@ -220,5 +297,12 @@ body{
                     padding-top: 0vh;
                 }
 
+                /* list1 */
+                ul.list1 {
+                    font-size: 3vw;
+                }
+                ul.list1 >li {
+                    padding: 20px 0vw 5px 6.8vw;
 
+                  /* media query for second section */
             }
