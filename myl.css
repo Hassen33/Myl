@@ -134,7 +134,8 @@ body{
             }
             /* form */
             .form-label-group{
-                padding-top: 0.5vh;
+                padding: 0.5vh 0 -3vh 0 ;
+                
                 
             }
             label{
@@ -143,7 +144,7 @@ body{
             }
             .btn{
                 background-color: var(--title-color);
-                margin-top:10px ;
+                margin:10px 0 0 0;
                 padding: 3% 10% 3% 10% ;
                 
             }
@@ -155,7 +156,7 @@ body{
                 color: var(--white-text-color);
                 height: 30vh;
             }
-            /* list */
+            /* list1 */
             ul.list1{
                 font-size: 3.2vw ;
                 display: none;
@@ -166,7 +167,13 @@ body{
                 background-size: 2.5em;
                 font-weight: 500;
             }
-
+            /* second section */
+            .c1{
+                background-image: url("assets/icons/second section/first column/column background.svg");
+                background-size: cover;
+                background-position: center center;
+                height: 100vh;
+            }
             
             /* media query for first section */
             /* Large desktops and laptops */
@@ -189,11 +196,29 @@ body{
             /* Landscape phones and portrait tablets */
             @media (max-width: 767px) {
                   /* media query for first section */
+                   
+                  .session-title{
+                      font-size:4vw;
+                      padding-top: 5vh;
+                    }
+                    .date-title{
+                    font-size:5vw;
+
+                }
+                
+                /* col2 */
+                /* overlay */
+                .overlay{
+                    padding: 30px 0 30px 0 ;
+                }
                 /* list */
                 ul.list{
-                    padding-left: 4vw;
-                    font-size: 1.6vw ;
+                    margin: 1.8vh 0  0;
+                    padding-left: 5vw;
+                    font-size: 2.1vw ;
                 }
+
+                
                   /* media query for second section */
             }
             
@@ -227,9 +252,9 @@ body{
                 }
                  /* session title */
                 .session-title{
+                    font-size:3.59vw;
                     padding-left: 10vw;
                     padding-top: 0vh;
-                    font-size:3.59vw;
                 }
 
                 /* date title */
@@ -245,7 +270,7 @@ body{
                 }
             /* col2 */
             .overlay{
-                padding: 30px 0 30px 0 ;
+                padding: 50px 0 30px 0 ;
             }
             /* col3 */
             .col3{
@@ -305,4 +330,4 @@ body{
                     padding: 20px 0vw 5px 6.8vw;
 
                   /* media query for second section */
-            }
+            }}
